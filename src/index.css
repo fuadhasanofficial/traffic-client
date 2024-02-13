@@ -1,0 +1,42 @@
+@import "keep-react/css";
+@import url("https://fonts.maateen.me/apona-lohit/font.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.alpona {
+  font-family: "AponaLohit", sans-serif;
+}
+
+.my-box {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.image-container {
+  width: 200px; /* Set the container width */
+  height: 200px; /* Set the container height */
+}
+
+.rotate {
+  animation: rotation 10s infinite linear; /* Adjust the animation duration and timing function as needed */
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg); /* Rotate from 0 degrees */
+  }
+  to {
+    transform: rotate(360deg); /* Rotate to 360 degrees */
+  }
+}
+
+.bg-1 {
+  background: url("./assets/bg.svg");
+  background-size: cover;
+}
+.body-bg {
+  background: url("./assets/body-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
